@@ -1,0 +1,38 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/open-devops/RoleService
+          repos:
+            service-management-service:
+              pattern: ServiceManagementService*
+              uri: https://github.com/open-devops/ServiceManagementService
+              searchPaths: config
+            apigateway-service:
+              pattern: APIGatewayService*
+              uri: https://github.com/open-devops/APIGatewayService
+              searchPaths: conf
+            role-service:
+              pattern: RoleService*
+              uri: https://github.com/open-devops/RoleService
+              searchPaths: conf
+            organizetion-service:
+              pattern: OrganizationService*
+              uri: https://github.com/open-devops/OrganizationService
+              searchPaths: conf
+            account-service:
+              pattern: AccountService*
+              uri: https://github.com/open-devops/AccountService
+              searchPaths: conf
+            product-service:
+              pattern: ProductService*
+              uri: https://github.com/open-devops/ProductService
+              searchPaths: conf
+            permission-service:
+              pattern: PermissionService*
+              uri: https://github.com/open-devops/PermissionService
+              searchPaths: conf
