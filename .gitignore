@@ -5,6 +5,7 @@ target/
 .project
 .springBeans
 .travis.yml
+.idea/
 docker-compose.yml
 mvnw
 mvnw.cmd
